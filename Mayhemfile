@@ -9,7 +9,7 @@ project: baptistapedro/pixz-fuzz
 target: pixz-fuzz-latest
 
 # Base image to run the binary in.
-image: index.docker.io/pedbap/pixz-fuzz@sha256:017882da774ca64702cbd88c7d14a4d1ff5d09241f68fd51cfea35ce5bad7e33
+image: pedbap/pixz-fuzz
 
 # Turns on extra test case processing (completing a run will take longer)
 advanced_triage: false
@@ -40,6 +40,3 @@ cmds:
     ## that length will be truncated. Be very careful about increasing this
     ## limit as it can severely affect your fuzzer performance.
     # max_length: 8192
-
-testsuite:
-  - https://mayhem.forallsecure.com/baptistapedro/pixz-fuzz/pixz-fuzz-latest/testsuite.tar
