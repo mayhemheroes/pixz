@@ -1,0 +1,5 @@
+project: pixz
+target: pixz
+
+cmds:
+  - cmd: /pixz/src/pixz @@ /dev/null
